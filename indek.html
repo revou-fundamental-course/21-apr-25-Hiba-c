@@ -1,11 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Konversi Suhu Create by Hiba</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+  <header>
+    <h1>Konversi Suhu Dalam Sekejap Mata!</h1>
+  </header>
+  <main>
+    <section>
+      <p>Kamu kesulitan dalam mengubah Suhu Celsius ke Fahrenheit ? Atau sebaliknya ?
+      <br>Kebetulan sekali kamu bsedang membuka website ini!!
+      <br>Disini kami menyediakan layanan untuk mengubah Suhu Celsius ke Fahrenheit dan juga sebaliknya</p>
+      <p>Langkah pertama masukan angka(ex:20)<br>pilih tombol <b>Konversi</b> untuk menghitung<br>pilih tombol <b>Reverse</b> untuk menganti satuan<br>dan pilih tombol <b>Reset</b> untuk menghapus.</p>
+    </section>
+
+    <form class="section-content" id="konversi-form" onsubmit="return false;">
+      <div class="section-item">
+        <label for="konversi-input" id="label-input">Celcius (&deg;C):</label>
+      </div>
+      <div class="section-item">
+        <input type="number" id="konversi-input" required placeholder="masukan angka">
+      </div>
+      <div class="section-item" id="form-action">
+        <button type="button" id="btn-konversi" class="bg-1">Konversi</button>
+        <button type="button" id="btn-reset" class="bg-2">Reset</button>
+        <button type="button" id="btn-reverse" class="bg-3">Reverse</button>
+      </div>
+    </form>
+
+    <section class="section-content">
+      <div class="section-item">
+        <label for="result-input" id="label-result">Fahrenheit (&deg;F):</label>
+      </div>
+      <div class="section-item">
+        <input type="text" id="result-input" readonly placeholder="masukan angka">
+      </div>
+    </section>
+
+    <section class="section-content">
+      <div class="section-item">
+        <label for="calculate-detail">Cara Kalkulasi:</label>
+      </div>
+      <div class="section-item">
+        <textarea id="calculate-detail" readonly></textarea>
+      </div>
+    </section>
+
+    <section>
+      <header>
+        <h1>Cara Konversi Dari Celcius (&deg;C) ke Fahrenheit (&deg;F)</h1>
+      </header>
+      <hr />
+      <article>
+        <p>Suhu <span class="formula">S</span> dalam derajat Fahrenheit (&deg;F)</p>
+        <div class="formula">
+          S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub> x 9/5) + 32
+        </div>
+        <p>Suhu <span class="formula">S</span> dalam derajat Celcius (&deg;C)</p>
+        <div class="formula">
+          S<sub>(&deg;C)</sub> = (S<sub>(&deg;F)</sub> - 32) x 5/9
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <pre>&copy; 2025 Hiba. All rights reserved.</pre>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
